@@ -8,12 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://rodrigoavendano.github.io/my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mis expectativas</title>
+      <title>La cultura de un(a) desarrolldor(a) de software</title>
       <link>https://rodrigoavendano.github.io/my_launchx_blog/posts/intro/</link>
       <pubDate>Mon, 21 Feb 2022 18:16:21 -0600</pubDate>
       
       <guid>https://rodrigoavendano.github.io/my_launchx_blog/posts/intro/</guid>
-      <description>Usa este post para anotar tus expectativas de la misión.</description>
+      <description>Oxford define la cultura como &amp;ldquo;Un conjunto de conocimientos e ideas no especializados adquiridos gracias al desarrollo de las facultades intelectuales, mediante la lectura, el estudio y el trabajo&amp;rdquo;.
+El desarrollo de software es un área sumamente amplia debido a la enorme cantidad de lenguajes que existen y surgen día a día, pero indepenedientemente de los lengüajes con los que un desarrollador trabaje existen características más allá de sus conocimientos que hacen que este pueda resaltar y tener un gran valor.</description>
     </item>
     
   </channel>
