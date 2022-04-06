@@ -6,7 +6,16 @@
     <description>Recent content in Launch X Bitácora de viaje on Bitácora de Viaje de Rodrigo Avendaño</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Feb 2022 18:16:21 -0600</lastBuildDate><atom:link href="https://rodrigoavendano.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://rodrigoavendano.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mi ruta de aprendizaje</title>
+      <link>https://rodrigoavendano.github.io/my_launchx_blog/posts/post_1/</link>
+      <pubDate>Wed, 06 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodrigoavendano.github.io/my_launchx_blog/posts/post_1/</guid>
+      <description> Python Requerimientos de un sistema Público Objetivo WireFrames -UI/UX HTML CSS Vanilla Javascript Vue Js Buenas prácticas de programación Git Github  </description>
+    </item>
+    
     <item>
       <title>La cultura de un(a) desarrolldor(a) de software</title>
       <link>https://rodrigoavendano.github.io/my_launchx_blog/posts/intro/</link>
