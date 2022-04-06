@@ -8,7 +8,7 @@ description: '¿Qué he aprendido en LaunchX?'
 - Requerimientos de un sistema
 - Público Objetivo
 - WireFrames
-- -UI/UX
+- UI/UX
 - HTML
 - CSS
 - Vanilla Javascript
