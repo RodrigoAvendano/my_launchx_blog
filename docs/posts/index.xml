@@ -26,5 +26,15 @@
 El desarrollo de software es un área sumamente amplia debido a la enorme cantidad de lenguajes que existen y surgen día a día, pero indepenedientemente de los lengüajes con los que un desarrollador trabaje existen características más allá de sus conocimientos que hacen que este pueda resaltar y tener un gran valor.</description>
     </item>
     
+    <item>
+      <title>Iniciando con Git</title>
+      <link>https://rodrigoavendano.github.io/my_launchx_blog/posts/first_steps_with_git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rodrigoavendano.github.io/my_launchx_blog/posts/first_steps_with_git/</guid>
+      <description>Imagina trabajar en un proyecto al cual le has invertido mucho tiempo y esfuerzo, puede ser un código de programación, un proyecto de photoshop, etc.
+Pero, ¡sorpresa!, resulta que hay un error en tu código y al hacer modificaciones has terminado modificando el funcionamiento de una sección, o imagina que has borrado una carpeta con capas sin querer y has cerrado el proyecto. Probablemente te haya pasado alguna vez algo parecido, y todos sabemos que esto no es nada agradable ni divertido.</description>
+    </item>
+    
   </channel>
 </rss>

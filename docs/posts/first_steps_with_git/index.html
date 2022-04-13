@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Iniciando con Git - Bitácora de Viaje de Rodrigo Avendaño</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://rodrigoavendano.github.io/my_launchx_blog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="../../css/style.min.4f4767d518839223786999cdb69fc7a63791220ecccd236bc732a5f998aaee2d.css">
+  
+
+  
+    <meta name="description" content="Primeros Pasos con Git."/>
+    <meta property="og:title" content="Iniciando con Git"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://rodrigoavendano.github.io/my_launchx_blog/posts/first_steps_with_git/"/>
+    
+    <meta property="og:description" content="Primeros Pasos con Git."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@izac_ortis"/>
+    <meta name="twitter:creator" content="@izac_ortis"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://rodrigoavendano.github.io/my_launchx_blog/">Bitácora de Viaje de Rodrigo Avendaño</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-aboutme">
+                <a href="../../pages/about/">AboutMe</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="../../posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>Iniciando con Git<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <p>Imagina trabajar en un proyecto al cual le has invertido mucho tiempo y esfuerzo, puede ser un código de programación, un proyecto de photoshop, etc.</p>
+<p>Pero, ¡sorpresa!, resulta que hay un error en tu código y al hacer modificaciones has terminado modificando el funcionamiento de una sección, o imagina que has borrado una carpeta con
+capas sin querer y has cerrado el proyecto. Probablemente te haya pasado alguna vez algo parecido, y todos sabemos que esto no es nada agradable ni divertido.</p>
+<p>Quizá podríamos hacer carpetas para ir realizando copias de tu proyecto, pero probablemente acabemos con muchas de ellas y exoste el riesgo que guardemos parte de la nformación
+en una carpeta que no era la correcta. ¿Existirá alguna mejor forma de hacer respaldos y tener segura nuestra información?. La respuesta es si, utilizar Git.
+Git es un sistema de control de versiones que nos ayudará a tener respaldos de nuestro trabajo, regresarlos a un punto en el que nuestro proyecto servía, compartirlo
+con nuestros colaboradores entre muchas, muchas otras cosas más.</p>
+<h2 id="qué-es-un-control-de-versiones">¿Qué es un control de versiones?</h2>
+<p>Ahora sabemos que Git es un control de versiones, pero ¿con qué se come eso?.</p>
+<p>Un control de versiones es un sistema que se encarga de registrar todos los cambios que vas realizando en los archivos de tus proyectos, de forma que si a tu cliente le gustaba
+más la primera paleta de colores en tu diseño o necesitas la última versión de tu código que servía mejor de lo que la actual lo hace podrás recuperar todo ello en unos pocos segundos.
+Permite comparar los cambios hechos a lo largo del tiempo, ver quien modificó por última algún archivo que te esta dando problemas, cuando lo hizo y mucho más.</p>
+<h2 id="fundamentos-de-git">Fundamentos de Git</h2>
+<p>Llamemos a partir de ahora a los sistemas de control de versiones por sus siglas en inglés: <strong>VCS</strong> (Version Control Systems).
+La diferencia de Git con cualquier otro VCS es como manejan sus datos. Para entender esto, dígamos que es como si Git tomará una foto cada vez que guardas tu archivo y guarda
+una referencia a esa foto. En caso de que existan archivos en un proyecto que no han sido modificados Git no tomará una nueva foto, dejará la última que tomo porque ese
+archivo sigue igual.</p>
+<p>Gran parte de las operaciones que hace Git se hacen de forma local, sin tener que conectarte a internet, toda la historia de tu proyecto se queda en tu disco local, por lo que
+la mayoría de sus operaciones son inmediatas.
+Git utiliza una suma de comprobación, conocida también como <a href="https://www.wikiversus.com/informatica/que-es-checksum/">checksum</a> para verificar e identificar el contenido.
+Por lo tanto no es posible cambiar dicho contenido sin quer Git lo sepa. Para ello Git utiliza un mecánismo conocido como hash SHA-1, una cadena de 40 caracteres hexadecimales
+(0-9, A-F) calculada en base al contenido del archivo o la estructura del directorio en Git.
+Un hash SHA-1 se ve así:</p>
+<p><strong>12CE7981109FD2FBDE7C4816AA184EC2A9CC10C7</strong></p>
+<p>Estos valores los podrás ver mucho en Git ya que todo se guarda por el valor hash de sus contenidos</p>
+<h2 id="los-3-estados">Los 3 estados</h2>
+<p>Esto es muy importante de recordar, Git tiene tres estados principales en los que se pueden encontrar tus archivos:</p>
+<ul>
+<li><strong>Commited</strong>(Confirmado): Los datos han sido almacenados de forma segura</li>
+<li><strong>Modified</strong>(Modificado): Has modificado un archivo, pero no lo has confirmado</li>
+<li><strong>Staged</strong>(Preparado): Has marcado un archivo modificado para ser confirmado</li>
+</ul>
+<p>Esto nos lleva a las 3 secciones principales de un proyecto de Git:</p>
+<ul>
+<li><strong>Git directory</strong>(Directorio de Git):Se almacenan los metadatos y la base de datos de objetos para tu proyecto, la parte más importante de Git y lo que se copia
+cuando clonas un repositorio de otra computadora.</li>
+<li><strong>Working directory</strong>(Directorio de trabajo):Copia de una versión del proyecto, se sacan de la base de datos comprimida en el Git directory y se colocan en tu disco para que los puedas usar o modificar</li>
+<li><strong>Staging area</strong>(Área de preparación):Es un archivo generalmente contenido en el directorio de Git que guarda información sobre que es lo que vas a incluir en tu siguiente confirmación (commit)</li>
+</ul>
+<p>Flujo de trabajo:</p>
+<ol>
+<li>Modificas una serie de archivos en tu directorio de trabajo</li>
+<li>Preparas los archivos, añadiendolos a tu área de preparación</li>
+<li>Confirmas los cambios, lo que toma los archivos tal y como estan en el área de preparación y almacena esa copia de forma permanente en tu directorio de Git</li>
+</ol>
+<p>Si una versión concreta de un archivo está en el directorio de Git se considera <em>confirmada(committed)</em>. Si ha sufrido cambios desde que se obtuvo el repositorio pero la has añadido
+al área de preparación esta <em>preparada(staged)</em>, si por otro lado no se ha preparado está <em>modificada</em></p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/izac_ortis" title="twitter" target="_blank" rel="noopener">
+          <img src="../../images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/RodrigoAvendano" title="github" target="_blank" rel="noopener">
+          <img src="../../images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="../../js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
