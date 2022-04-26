@@ -51,7 +51,7 @@ Esto es muy importante de recordar, Git tiene tres estados principales en los qu
 ![Git-files-states](https://user-images.githubusercontent.com/99101837/165192994-55f88a64-0433-4749-8774-93eb7bcd031b.jpg)
 
 *** 
-
+  
 Esto nos lleva a las 3 secciones principales de un proyecto de Git:
 
 - **Git directory**(Directorio de Git):Se almacenan los metadatos y la base de datos de objetos para tu proyecto, la parte más importante de Git y lo que se copia 
@@ -62,7 +62,7 @@ cuando clonas un repositorio de otra computadora.
 ![Git-sections](https://user-images.githubusercontent.com/99101837/165193059-68459a0d-9ec4-4126-80f0-db2abd6cb84d.jpg)
 
 ***
-
+  
 Flujo de trabajo:
 
 1. Modificas una serie de archivos en tu directorio de trabajo
@@ -75,3 +75,42 @@ Flujo de trabajo:
 
 Si una versión concreta de un archivo está en el directorio de Git se considera *confirmada(committed)*. Si ha sufrido cambios desde que se obtuvo el repositorio pero la has añadido
 al área de preparación esta *preparada(staged)*, si por otro lado no se ha preparado está *modificada*
+
+  
+## Configurando Git
+
+Antes de empezar a usar git es necesario personalizar su entorno. Estas configuraciones se realizan solo una vez, aún cuando actualices Git se mantendrán.
+Git tiene una herramienta llamada *git config* que permite obtener y establecer variables de configuración que controlan el aspecto y el funcionamiento.
+
+### Identidad  
+Lo primero es establecer tu nombre de usuario y dirección de correo electrónico, para ello se utilizan los siguientes comandos:
+*git config --global user.name "Tu nombre de Usuario"*  
+*git config --global user.email tucorreoelectronico@correo.com*
+
+### Editor
+Para seleccionar el editor por defecto que Git utilizará cuando debas ingresar un mensaje utiliza el siguiente comando
+*git config --global core.editor editor*
+
+Un ejemplo utilizando el editor emcas sería:
+
+*git config --global core.editor emacs*
+
+Vim y Emacs suelen ser los editores por defecto
+
+### Comporbando la configuración
+
+Si deseas comprobar la configuración que estas utilizando puedes usar el comando  
+
+*git config --list*  
+
+En caso de querer comprobar el valor que Git usará para una clave especifica ejecuta:  
+
+*git config key*  
+  
+Por ejemplo, para saber tu nombre de usuario ejecuta:
+  
+*git config user.name*
+
+Entender estos temas y conocer estos primeros comandos serán clave para poder empezar a trabajar con git y beneficiarnos de todo lo que nos ofrece. Una vez entendidos será más fácil comprender posteriores temas de git. Si llegaste hasta aquí te agradezco por haber leído este post, espero te haya sido de interés y/ó utilidad. ¡Muchas gracias por leerme!
+  
+  
