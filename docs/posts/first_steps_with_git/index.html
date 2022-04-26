@@ -112,6 +112,27 @@ cuando clonas un repositorio de otra computadora.</li>
 <hr>
 <p>Si una versión concreta de un archivo está en el directorio de Git se considera <em>confirmada(committed)</em>. Si ha sufrido cambios desde que se obtuvo el repositorio pero la has añadido
 al área de preparación esta <em>preparada(staged)</em>, si por otro lado no se ha preparado está <em>modificada</em></p>
+<h2 id="configurando-git">Configurando Git</h2>
+<p>Antes de empezar a usar git es necesario personalizar su entorno. Estas configuraciones se realizan solo una vez, aún cuando actualices Git se mantendrán.
+Git tiene una herramienta llamada <em>git config</em> que permite obtener y establecer variables de configuración que controlan el aspecto y el funcionamiento.</p>
+<h3 id="identidad">Identidad</h3>
+<p>Lo primero es establecer tu nombre de usuario y dirección de correo electrónico, para ello se utilizan los siguientes comandos:
+<em>git config &ndash;global user.name &ldquo;Tu nombre de Usuario&rdquo;</em><br>
+<em>git config &ndash;global user.email <a href="mailto:tucorreoelectronico@correo.com">tucorreoelectronico@correo.com</a></em></p>
+<h3 id="editor">Editor</h3>
+<p>Para seleccionar el editor por defecto que Git utilizará cuando debas ingresar un mensaje utiliza el siguiente comando
+<em>git config &ndash;global core.editor editor</em></p>
+<p>Un ejemplo utilizando el editor emcas sería:</p>
+<p><em>git config &ndash;global core.editor emacs</em></p>
+<p>Vim y Emacs suelen ser los editores por defecto</p>
+<h3 id="comporbando-la-configuración">Comporbando la configuración</h3>
+<p>Si deseas comprobar la configuración que estas utilizando puedes usar el comando</p>
+<p><em>git config &ndash;list</em></p>
+<p>En caso de querer comprobar el valor que Git usará para una clave especifica ejecuta:</p>
+<p><em>git config key</em></p>
+<p>Por ejemplo, para saber tu nombre de usuario ejecuta:</p>
+<p><em>git config user.name</em></p>
+<p>Entender estos temas y conocer estos primeros comandos serán clave para poder empezar a trabajar con git y beneficiarnos de todo lo que nos ofrece. Una vez entendidos será más fácil comprender posteriores temas de git. Si llegaste hasta aquí te agradezco por haber leído este post, espero te haya sido de interés y/ó utilidad. ¡Muchas gracias por leerme!</p>
 
     </div>
   </div>
