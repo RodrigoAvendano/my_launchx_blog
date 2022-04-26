@@ -48,6 +48,10 @@ Esto es muy importante de recordar, Git tiene tres estados principales en los qu
 - **Modified**(Modificado): Has modificado un archivo, pero no lo has confirmado
 - **Staged**(Preparado): Has marcado un archivo modificado para ser confirmado
 
+![Git-files-states](https://user-images.githubusercontent.com/99101837/165192994-55f88a64-0433-4749-8774-93eb7bcd031b.jpg)
+
+*** 
+
 Esto nos lleva a las 3 secciones principales de un proyecto de Git:
 
 - **Git directory**(Directorio de Git):Se almacenan los metadatos y la base de datos de objetos para tu proyecto, la parte más importante de Git y lo que se copia 
@@ -55,12 +59,19 @@ cuando clonas un repositorio de otra computadora.
 - **Working directory**(Directorio de trabajo):Copia de una versión del proyecto, se sacan de la base de datos comprimida en el Git directory y se colocan en tu disco para que los puedas usar o modificar
 - **Staging area**(Área de preparación):Es un archivo generalmente contenido en el directorio de Git que guarda información sobre que es lo que vas a incluir en tu siguiente confirmación (commit)
 
+![Git-sections](https://user-images.githubusercontent.com/99101837/165193059-68459a0d-9ec4-4126-80f0-db2abd6cb84d.jpg)
+
+***
+
 Flujo de trabajo:
 
 1. Modificas una serie de archivos en tu directorio de trabajo
 2. Preparas los archivos, añadiendolos a tu área de preparación
 3. Confirmas los cambios, lo que toma los archivos tal y como estan en el área de preparación y almacena esa copia de forma permanente en tu directorio de Git
 
+![workflow](https://user-images.githubusercontent.com/99101837/165193130-5059c30c-2ca7-41d6-8c23-66e906f2f888.jpg)
+
+***
+
 Si una versión concreta de un archivo está en el directorio de Git se considera *confirmada(committed)*. Si ha sufrido cambios desde que se obtuvo el repositorio pero la has añadido
 al área de preparación esta *preparada(staged)*, si por otro lado no se ha preparado está *modificada*
-
